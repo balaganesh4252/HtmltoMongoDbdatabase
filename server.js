@@ -4,7 +4,7 @@ const mongoose =require("mongoose");
 const bodyParser =require("body-parser");
 
 app.use(bodyParser.urlencoded({extended:true}));
-mongoose.connect("mongodb://localhost:27017/database1",{ useNewUrlParser: true, useUnifiedTopology: true });
+mongoose.connect("mongodb+srv://balaganesh:suP1IEgVdayiyr6z@cluster0.2dh7cdx.mongodb.net/database?retryWrites=true&w=majority",{ useNewUrlParser: true, useUnifiedTopology: true });
 
 const notesSchema={
     title:String,
