@@ -26,8 +26,3 @@ app.post("/",function(req,res){
     newNote.save();
     res.redirect('/');
 })
-
-
-app.listen(3000,function(){
-    console.log("server is running on 3000");
-})
